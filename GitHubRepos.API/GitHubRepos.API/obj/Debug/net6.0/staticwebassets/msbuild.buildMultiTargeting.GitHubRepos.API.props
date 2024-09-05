@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\GitHubRepos.API.props" />
+</Project>

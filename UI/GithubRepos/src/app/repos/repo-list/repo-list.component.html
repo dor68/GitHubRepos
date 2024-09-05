@@ -1,0 +1,10 @@
+@if (unMark && ( !reposList || reposList.length < 1)  ) {
+    <div>No Repos marked .</div>
+  }
+  
+  @for ( item of reposList; track $index) {
+      <app-repo-card [repoItem]="item" (repoChanged)="bookmarkRepo($event)" [unMark]="unMark"></app-repo-card>
+  }
+  
+  
+  
